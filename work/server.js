@@ -14,7 +14,6 @@ const week=["sun","mon","tue","wed","thu","fri","sat"];
 const days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 
-text="";
 const sess = {
   secret: 'secretsecretsecret',
   cookie: { maxAge: 60000000000 },
