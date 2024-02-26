@@ -34,9 +34,9 @@ app.use(express.static('public'));
 
 
 const connection = mysql.createConnection({
-  host: 'esdb.cis.iwate-u.local',
-  user: 'user2023gr07',
-  password: '23gr07.ZFbe',
+  host: '******************',
+  user: '************',
+  password: '**********',
   database: 'db2023gr07'
 });
 
