@@ -1,0 +1,307 @@
+@charset "UTF-8";
+body {
+
+    border-radius: 5px;
+    background: #f6f5f4;
+    color: black;
+
+}
+
+#all {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+form {
+    width:500px;
+    padding:5px;
+    padding-bottom: 2em;
+    background: white;
+    border: double 10px #d49d44;
+    margin:50px auto;
+}
+
+h1,h2,h3,.center{
+    text-align: center;
+}
+
+div.center{
+  width: 50%;
+  position: relative;
+  margin-left:25%;
+  z-index: 1;
+}
+
+/* のあのるのタイトルの動き */
+.title {
+  display: flex;
+  overflow: hidden;
+  color: #d49d44;
+  position:relative;
+  left: 25%;
+}
+
+.title span {
+    display: block;
+    transform: translate(0, 105%);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
+
+}
+
+.title.-visible span {
+  transform: translate(0, 0);
+}
+
+.title span:nth-child(2) {
+  transition-delay: 0.06s;
+}
+.title span:nth-child(3) {
+  transition-delay: 0.12s;
+}
+.title span:nth-child(4) {
+  transition-delay: 0.18s;
+}
+
+/* サブタイトルのアニメーション */
+@keyframes fadeInAnime{
+  from{
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+h3.fadeIn{
+  color: #d49d44;
+}
+
+.fadeIn {
+  animation-name: fadeInAnime;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+  animation-duration: 3.5s;
+  animation-timing-function:ease;
+  animation-delay: 1.20s;
+  animation-direction: normal;
+}
+
+label {
+  position: absolute;
+  font-size: 11px;
+  margin: 3px;
+  margin-top:4px;
+  padding: 0 10px;
+  color: #d49d44;
+  background-color: white;
+  transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
+  z-index: 1;
+
+}
+
+input{
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 2px solid #d49d44;
+  font-size:15px;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+  outline: none;
+}
+
+.active {
+  position: absolute;
+  left: -100px;
+  font-size: 15px;
+}
+
+.btn {
+    font-size: 1.2rem;
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    margin: 20px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  .save{
+    right: 20px;
+    bottom: 20px;
+    border:none;
+    box-shadow: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+  }
+   
+  
+  .save span { /*saveクラス内のspanだけデザインを変える*/
+    border-radius: 5px;
+    background: linear-gradient(0deg, rgba(212,157,68,1) 0%, rgba(190,141,61,1) 100%);
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),  /*影*/
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    margin:0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  
+  .save span:nth-child(1) {
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);  /*x軸の回転*/
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;  /*回転の中心*/
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  
+  .save span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  
+  .save:hover span:nth-child(1) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  
+  .save:hover span:nth-child(2) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+   color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
+
+  .return{
+    right: 20px;
+    bottom: 20px;
+    border:none;
+    box-shadow: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+  }
+   
+  
+  .return span { /*loginクラス内のspanだけデザインを変える*/
+    border-radius: 5px;
+    background: linear-gradient(0deg, rgba(212,157,68,1) 0%, rgba(190,141,61,1) 100%);
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),  /*影*/
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    margin:0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  
+  .return span:nth-child(1) {
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);  /*x軸の回転*/
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;  /*回転の中心*/
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  
+  .return span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  
+  .return:hover span:nth-child(1) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  
+  .return:hover span:nth-child(2) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+   color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
+
+/*.data{  
+    font-size: 1rem;
+    cursor: pointer;
+    background: #fff;
+    border: 2px solid #B78D4A;
+}
+
+.data:focus{   
+    outline-color: rgb(160, 115, 42);
+    background: #f2f4ff;
+}
+
+input[type="text"]{
+    margin-left: 65px;
+}
+*/

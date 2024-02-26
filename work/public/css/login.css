@@ -1,0 +1,339 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+  border-radius: 5px;
+  background: #f6f5f4;
+  color: black;
+
+  font-family:"Comic Sans MS"
+}
+
+.center, h3{
+  text-align: center;
+}
+
+div.center{
+  width: 50%;
+  position: relative;
+  margin-left:25%;
+  z-index: 1;
+}
+
+/* のあのるのタイトルの動き */
+.title {
+  display: flex;
+  overflow: hidden;
+  color: #d49d44;
+  position:relative;
+  left: 25%;
+}
+
+.title span {
+    display: block;
+    transform: translate(0, 105%);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
+
+}
+
+.title.-visible span {
+  transform: translate(0, 0);
+}
+
+.title span:nth-child(2) {
+  transition-delay: 0.06s;
+}
+.title span:nth-child(3) {
+  transition-delay: 0.12s;
+}
+.title span:nth-child(4) {
+  transition-delay: 0.18s;
+}
+
+/* サブタイトルのアニメーション */
+@keyframes fadeInAnime{
+  from{
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+h3.fadeIn{
+  color: #d49d44;
+}
+
+.fadeIn {
+  animation-name: fadeInAnime;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
+  animation-duration: 3.5s;
+  animation-timing-function:ease;
+  animation-delay: 1.20s;
+  animation-direction: normal;
+}
+
+form {
+  background-color: white;
+  padding: 5px;   /*上下左右の余白*/
+  padding-bottom: 2em;  /*下の余白*/
+  border: double 10px #d49d44;  /*枠線*/
+  width: 500px; /*幅*/
+  margin: 50px auto;  /*外側の余白、中央寄せ*/
+}
+
+.center, h1, h2, h3 {
+  text-align: center;
+}
+
+label {
+  position: absolute;
+  font-size: 11px;
+  margin: 3px;
+  margin-top:4px;
+  padding: 0 10px;
+  color: #d49d44;
+  background-color: white;
+  transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
+  z-index: 1;
+
+}
+
+input{
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 2px solid #d49d44;
+  font-size:15px;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+  outline: none;
+}
+
+.active {
+  position: absolute;
+  left: -100px;
+  font-size: 15px;
+}
+
+.btn {
+  font-size: 1.2rem;
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  margin: 20px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.login{
+  right: 20px;
+  bottom: 20px;
+  border:none;
+  box-shadow: none;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+ 
+
+.login span { /*loginクラス内のspanだけデザインを変える*/
+  border-radius: 5px;
+  background: linear-gradient(0deg, rgba(212,157,68,1) 0%, rgba(190,141,61,1) 100%);
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),  /*影*/
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  margin:0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.login span:nth-child(1) {
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);  /*x軸の回転*/
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;  /*回転の中心*/
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+
+.login span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+
+.login:hover span:nth-child(1) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.login:hover span:nth-child(2) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+ color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+.newid{
+  right: 20px;
+  bottom: 20px;
+  border:none;
+  box-shadow: none;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+ 
+
+.newid span { /*loginクラス内のspanだけデザインを変える*/
+  border-radius: 5px;
+  background: linear-gradient(0deg, rgba(212,157,68,1) 0%, rgba(190,141,61,1) 100%);
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),  /*影*/
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  margin:0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.newid span:nth-child(1) {
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);  /*x軸の回転*/
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;  /*回転の中心*/
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+
+.newid span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+
+.newid:hover span:nth-child(1) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.newid:hover span:nth-child(2) {
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+ color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+/*
+.data { 
+  font-size: 1rem;
+  background: #fff;
+  border: 2px solid #d49d44;
+}
+
+.data:focus {
+  outline-color: rgb(160, 115, 42);
+  background: #f2f4ff;
+} */
+
+#all {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*.sort {
+  margin-left: 20%;
+  margin-right: auto;
+  text-align: left;
+}/*# sourceMappingURL=login.css.map */ 
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50;
+  width: 100%;
+  height: 100%;
+  background-color:#fff;  /* 背景カラー */
+  z-index: 9999;  /* 一番手前に */
+  pointer-events: none;  /* 他の要素にアクセス可能にするためにポインターイベントは無効に */
+  opacity: 0;  /* 初期値 : 透過状態 */
+  -webkit-transition: opacity 1s ease;  /* アニメーション時間は 0.8秒 */
+  -ms-transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+body.fadeout::after {
+  opacity: 1;
+}
+
+body.fadeout article{
+  -webkit-transform:scale(1.0);   /*画面が変わるときに表示画面の比率が変わらない。一倍だから。*/
+  transform:scale(1.0);
+}

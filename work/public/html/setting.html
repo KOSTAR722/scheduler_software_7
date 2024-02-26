@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/setting.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>設定画面</title>
+</head>
+    <body id = "splash">
+        <div class="splashbg"></div>
+        <div id="all">    
+        <h1 class="title">
+            <span>の</span>
+            <span>あ</span>
+            <span>の</span>
+            <span>る</span>
+        </h1>
+        <h3 class="fadeIn">~時間とお金の管理アプリ~</h3>
+        <h2>設定画面</h2>
+        <form action="/newset" method="POST">
+        <main class = "ue">
+            <tr>
+                <h3 class="pro">名前</h3>
+                <div class = "tekitou">
+                    <label for="name">Name</label>
+                    <input type="text" name="MyName" id="name">
+                </div>
+            </tr>
+            <tr>
+                <h3 class="pro">学年</h3>
+                <div class = "center">
+                    <select name="number" id="number" class="custom-select1 sources" placeholder="Grade">
+                        <option value=1>１年生</option>
+                        <option value=2>２年生</option>
+                        <option value=3>３年生</option>
+                        <option value=4>４年生</option>
+                    </select>
+                </div>
+            </tr>
+            <p></p>
+            <tr>
+                <h3 class="pro">講義時間</h3>
+                <div class = "center">
+                    <select name="interval" id="interval" class="custom-select2 sources" placeholder="Class Period">
+                        <option value="90">90分</option>
+                        <option value="100">100分</option>
+                    </select>
+                </div>
+                <div id="save" class = "center">
+                    <button class="btn save" type="submit" value="保存" ><span>click!</span><span>save</span></button>
+                </div>
+            </tr>
+        </main>
+        </form>
+        <form action="/jobset" method="post">
+        <main class = "sita">
+            <h2 class="pro">時給設定</h2>
+            <h3 class="pro">店舗名</h3>
+            <div class = "tekitou">
+                <label for="Store">Store</label>
+                <input type="text" name="store" id="Store">
+            </div>
+            <h3 class="pro">時給</h3>
+            <div class = "tekitou">
+                <label for="Hourly wage">Hourly wage</label>
+                <input type="text" name="pay" id="Hourly wage">
+            </div>
+            <div id="save" class = "center">
+                <button class="btn save" type="submit" value="保存" ><span>click!</span><span>save</span></button>
+            </div>
+        </main>
+        </form>
+      
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js/setting.js"></script>
+        </div>
+    </body>
+</html>

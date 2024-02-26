@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel = "stylesheet" href = "../css/default.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>初期設定</title>
+    </head>
+
+    <body id = "all">
+        <h1 class="title">
+            <span>の</span>
+            <span>あ</span>
+            <span>の</span>
+            <span>る</span>
+        </h1>
+        <h3 class="fadeIn">~時間とお金の管理アプリ~</h3>
+        <h2>初期設定</h2>
+
+        <form action="/default" method="POST">
+        <main class = "ue">
+            <h4 class ="center">授業の開始時刻を入力してください。</h4>
+
+            <div class ="center">1時限目　　　<input type="time" name="start_1" class="data"></div>
+            <div class ="center">2時限目　　　<input type="time" name="start_2" class="data"></div>
+            <div class ="center">3時限目　　　<input type="time" name="start_3" class="data"></div>
+            <div class ="center">4時限目　　　<input type="time" name="start_4" class="data"></div>
+            <div class ="center">5時限目　　　<input type="time" name="start_5" class="data"></div>
+            <div class ="center">6時限目　　　<input type="time" name="start_6" class="data"></div>
+
+            <h3 class="pro">講義時間を選択してください。</h3>
+            <div class = "center">
+                <select name="interval" class="custom-select1 sources" placeholder="Class Period">
+                    <option value=90>90分</option>
+                    <option value=100>100分</option>
+                </select>
+            </div>
+        </main>
+
+        <main class = "sita">
+            <h4 class ="center">アルバイトの時給を入力してください。</p>
+            <h3 class="pro">店舗名</h3>
+            <div class = "tekitou">
+                <label for="Store">Store</label>
+                <input type="text" name="store" class="Store">
+            </div>
+            <h3 class="pro">時給</h3>
+            <div class = "tekitou">
+                <label for="Hourly wage">Hourly wage</label>
+                <input type="text" name="pay" class="Hourly wage">
+            </div>
+
+            <div class ="center"><button class="btn save" type="submit" value="保存"><span>click!</span><span>save</span></button><div>
+            <div class ="center"><button class="btn return" type="button" value="戻る" onclick="location.href = './login.html' " ><span>click!</span><span>return</span></button><mai>
+        </main>
+        </form>
+        <script type="text/javascript" src="../js/default_animation.js"></script>
+    </body>
+</html>

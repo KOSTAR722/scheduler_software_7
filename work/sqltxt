@@ -1,0 +1,18 @@
+select def_set.id,schedule_class.name,schedule_class.date,schedule_class.period,schedule_class.class_time,
+case schedule_class.period
+when 1 then hour(def_set.class1)
+when 2 then hour(def_set.class2)
+when 3 then hour(def_set.class3)
+when 4 then hour(def_set.class4)
+when 5 then hour(def_set.class5)
+when 6 then hour(def_set.class6)
+end,
+case schedule_class.period
+when 1 then minute(def_set.class1)
+when 2 then minute(def_set.class2)
+when 3 then minute(def_set.class3)
+when 4 then minute(def_set.class4)
+when 5 then minute(def_set.class5)
+when 6 then minute(def_set.class6)
+end
+from schedule_class,def_set where schedule_class.id=def_set.id and def_set.id=2;

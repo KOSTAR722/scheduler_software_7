@@ -1,0 +1,193 @@
+<mxfile host="65bd71144e">
+    <diagram id="kHRNwsiUJpbGju6_xaSR" name="Page-1">
+        <mxGraphModel dx="1791" dy="705" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-1" value="&lt;div style=&quot;&quot;&gt;[login]&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;ログイン&lt;/div&gt;&lt;div style=&quot;&quot;&gt;(スタートページ)&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;html : login.html&lt;/div&gt;&lt;div style=&quot;&quot;&gt;css : login.css&lt;/div&gt;&lt;div style=&quot;&quot;&gt;js : login.js&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; jquery-3.6.4.min.js&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="40" width="190" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-9" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="180" y="160" as="sourcePoint"/>
+                        <mxPoint x="180" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-10" value="ログイン成功" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="nmCxvMl4NMCDflOzseHY-9" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint y="30" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-13" value="&lt;div&gt;[calendar]&lt;br&gt;&lt;/div&gt;&lt;div&gt;カレンダー&lt;/div&gt;&lt;div&gt;(メイン)&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;html : calender.html&lt;/div&gt;&lt;div&gt;css : calender.css&lt;/div&gt;&lt;div&gt;js : calender.js&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; jquery-3.6.4.min.js&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="280" width="190" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="nmCxvMl4NMCDflOzseHY-1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="180" y="200" as="sourcePoint"/>
+                        <mxPoint x="320" y="280" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="40" y="200"/>
+                            <mxPoint x="40" y="100"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-15" value="ログイン失敗" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="nmCxvMl4NMCDflOzseHY-14" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint y="-25" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-17" value="&lt;div&gt;[newid]&lt;br&gt;&lt;/div&gt;&lt;div&gt;ID作成&lt;/div&gt;&lt;div&gt;&lt;div&gt;html : newid.html&lt;/div&gt;&lt;div&gt;css : newid.css&lt;/div&gt;&lt;div&gt;js : newid.js&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;jquery-3.6.4.min.js&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="230" width="190" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="nmCxvMl4NMCDflOzseHY-17" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="180" y="200" as="sourcePoint"/>
+                        <mxPoint x="340" y="280" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="375" y="200"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-19" value="ID作成" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="nmCxvMl4NMCDflOzseHY-18" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-20" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-20" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" target="nmCxvMl4NMCDflOzseHY-1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="470" y="295" as="sourcePoint"/>
+                        <mxPoint x="500" y="309.66" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="520" y="295"/>
+                            <mxPoint x="520" y="130"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-21" value="戻る" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="nmCxvMl4NMCDflOzseHY-20" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="12" y="90" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-22" value="&lt;div&gt;[default]&lt;br&gt;&lt;/div&gt;&lt;div&gt;初期設定&lt;/div&gt;&lt;div&gt;&lt;div&gt;html : default.html&lt;/div&gt;&lt;div&gt;css : default.css&lt;/div&gt;&lt;div&gt;js : default.js&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; jquery-3.6.4.min.js&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="440" width="190" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="nmCxvMl4NMCDflOzseHY-17" target="nmCxvMl4NMCDflOzseHY-22" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="350" y="420" as="sourcePoint"/>
+                        <mxPoint x="450" y="420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-24" value="&lt;div&gt;ID作成&lt;/div&gt;&lt;div&gt;保存&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="nmCxvMl4NMCDflOzseHY-23" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-25" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="470" y="470" as="sourcePoint"/>
+                        <mxPoint x="470" y="320" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="520" y="470"/>
+                            <mxPoint x="520" y="320"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-26" value="戻る" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="nmCxvMl4NMCDflOzseHY-25" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint y="-25" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="nmCxvMl4NMCDflOzseHY-22" target="nmCxvMl4NMCDflOzseHY-1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="500" as="sourcePoint"/>
+                        <mxPoint x="440" y="500" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="375" y="570"/>
+                            <mxPoint x="720" y="570"/>
+                            <mxPoint x="720" y="70"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-28" value="&lt;div&gt;初期設定&lt;/div&gt;&lt;div&gt;保存&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="nmCxvMl4NMCDflOzseHY-27" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint y="23" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-29" value="&lt;div&gt;[addLecture]&lt;br&gt;&lt;/div&gt;&lt;div&gt;講義予定&lt;/div&gt;&lt;div&gt;&lt;div&gt;html : addLecture.html&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;css : addLecture_animaton1.css&lt;/div&gt;&lt;div&gt;js : addLecture.js&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;jquery-3.6.4.min.js&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="610" width="190" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-30" value="&lt;div&gt;[setting]&lt;br&gt;&lt;/div&gt;&lt;div&gt;設定画面&lt;/div&gt;&lt;div&gt;&lt;div&gt;html : setting.html&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;css : setting.css&lt;/span&gt;&lt;/div&gt;&lt;div&gt;js : setting.js&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; jquery-3.6.4.min.js&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="610" width="190" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.475;exitY=1.004;exitDx=0;exitDy=0;entryX=0.472;entryY=-0.008;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="nmCxvMl4NMCDflOzseHY-13" target="nmCxvMl4NMCDflOzseHY-29" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="350" y="550" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-33" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="nmCxvMl4NMCDflOzseHY-30" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="140" y="580" as="sourcePoint"/>
+                        <mxPoint x="280" y="560" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="375" y="580"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-34" value="&lt;div&gt;設定画面&lt;/div&gt;&lt;div&gt;アルバイト&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="nmCxvMl4NMCDflOzseHY-33" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-30" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-35" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="nmCxvMl4NMCDflOzseHY-29" target="nmCxvMl4NMCDflOzseHY-13" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="120" y="669.66" as="sourcePoint"/>
+                        <mxPoint x="220" y="669.66" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="10" y="660"/>
+                            <mxPoint x="10" y="345"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-36" value="&lt;div&gt;講義追加&lt;/div&gt;&lt;div&gt;設定変更&lt;br&gt;&lt;/div&gt;&lt;div&gt;成功&lt;/div&gt;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="nmCxvMl4NMCDflOzseHY-35" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-37" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="nmCxvMl4NMCDflOzseHY-29" target="nmCxvMl4NMCDflOzseHY-29" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="140" y="700" as="sourcePoint"/>
+                        <mxPoint x="240" y="700" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="97" y="730"/>
+                            <mxPoint x="192" y="730"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-38" value="失敗" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="nmCxvMl4NMCDflOzseHY-37" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-39" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.835;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="nmCxvMl4NMCDflOzseHY-30" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="310" y="710" as="sourcePoint"/>
+                        <mxPoint x="370" y="700" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="310" y="730"/>
+                            <mxPoint x="440" y="730"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-40" value="失敗" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" parent="nmCxvMl4NMCDflOzseHY-39" connectable="0" vertex="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="nmCxvMl4NMCDflOzseHY-41" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="nmCxvMl4NMCDflOzseHY-30" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="670" as="sourcePoint"/>
+                        <mxPoint x="10" y="660" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="510" y="660"/>
+                            <mxPoint x="510" y="760"/>
+                            <mxPoint x="10" y="760"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

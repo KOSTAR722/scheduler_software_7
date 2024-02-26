@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+            <meta charset="utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <link rel="stylesheet" href="../css/addLecture.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>講義予定</title>
+    </head>
+
+    <body id="splash">
+        <div class="splashbg"></div>
+        <div id = "all">
+        <div class = "center">
+            <h1 class="title">
+                <span id = "st">の</span>
+                <span>あ</span>
+                <span>の</span>
+                <span>る</span>
+            </h1>
+        </div>
+           
+        
+        
+        <h3 class="fadeIn">~時間とお金の管理アプリ~</h3>
+        <h2>講義予定</h2>
+        <form name="form1" action="/newsch" method="post">
+            <main class = "ue">
+                <h3 class = "center">講義日</h3>
+                <span id="input_error"></span>
+                <div class = "box1">
+                    <select name="day_select" id="day_select" class="custom-select1 sources" placeholder="day">
+                        <option value = 0>日曜日</option>>
+                        <option value = 1>月曜日</option>
+                        <option value = 2>火曜日</option>
+                        <option value = 3>水曜日</option>
+                        <option value = 4>木曜日</option>
+                        <option value = 5>金曜日</option>
+                        <option value = 6>土曜日</option>
+                    </select>
+
+                    <select name = "class_select" id = "class_select" class="custom-select2 sources" placeholder="class">
+                        <option value = 1>1コマ</option>
+                        <option value = 2>2コマ</option>
+                        <option value = 3>3コマ</option>
+                        <option value = 4>4コマ</option>
+                        <option value = 5>5コマ</option>
+                        <option value = 6>6コマ</option>
+                        <option value = 7>7コマ</option>
+                    </select>
+                </div>
+                <p></p>
+
+                <h3 class = "center">科目名</h3>
+                <div class="center">
+                    <label for="c_name">Subject</label>
+                    <input type="text" name="c_name" class="textbox" id="c_name" />
+                </div>
+
+                <h3 class = "center">講義室</h3>
+                <div class="center">
+                    <label for="room">Room</label>
+                    <input type="text" name="room" class="textbox" id="room" />
+                </div>
+
+                <div class = "center">
+                    <button class="btn subscribe" type="submit" formaction="/newsch"><span>click!</span><span>subscribe</span></button>
+                </div>
+            </main>
+        </form>
+        <form name="form2" action="/newjob" method="post">
+            <main class = "sita">
+                <h3 class = "center">バイト予定日</h3>
+                <span id="input_error"></span>
+                <div class = "center">
+                    <input type="date" id="date" name="date" value="" />
+                </div>
+                <p></p>
+
+                <h3 class = "center">追加予定のバイト</h3>
+
+                <div class = "center1">
+                    <select name="job_select" id="job_select" class="custom-select1 sources" placeholder="Workplace">
+                        <option value = "job1">アルバイト</option>
+                    </select>
+                </div>
+
+                <p></p>
+                <h3 class = "center">時間</h3>
+
+                <div class = "center">
+                    <div class ="box1">
+                        <input type="time" name="job_start" class="data">〜
+                        <input type="time" name="job_end" class="data">
+                    </div>
+                </div>
+
+                <div class = "center">
+                    <button class="btn subscribe" type="submit"><span>click!</span><span>subscribe</span></button>
+                </div>
+            </main>
+        </form>
+        <form name="form3" action="/delcl" method="post">
+            <main class = "ue">
+                <h3 class = "center">講義予定削除</h3>
+                    <div class = "box2">
+                        <select name="class_delete" id="class_delete" class="custom-select1 sources" placeholder="Class_delete">
+                            <option value = 1>1コマ</option>
+                            <option value = 2>2コマ</option>
+                            <option value = 3>3コマ</option>
+                            <option value = 4>4コマ</option>
+                            <option value = 5>5コマ</option>
+                            <option value = 6>6コマ</option>
+                            <option value = 7>7コマ</option>
+                        </select>
+                    </div>
+                <div class = "center">
+                    <button class="btn subscribe" type="submit"><span>click!</span><span>subscribe</span></button>
+                </div>
+            </main>
+        </form>
+        <form name="form4" action="/deljob" method="post">
+            <main class = "sita">
+                <h3 class = "center">予定削除</h3>
+                <div class = "box2">
+                    <select name="part_delete" id="part_delete" class="custom-select1 sources" placeholder="Schedule">
+                        <option value = "job">アルバイト</option>
+                    </select>
+                </div>
+                <div class = "center">
+                    <button class="btn subscribe" type="submit"><span>click!</span><span>subscribe</span></button>
+                </div>
+            </main>
+            <script src = "../js/addLecture_animaton1.js"></script>
+        </form>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,382 @@
+.calendar-container {
+  width: auto;
+  margin: 0 auto; 
+  background: #f6f5f4;
+  color: #1a1a1a;
+}
+h1 {
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+}
+
+body{
+  border-radius: 5px;
+  background: #f6f5f4;
+  color: #1a1a1a;
+}
+.calendar {
+  padding: 0 2% 10px 55px;
+  width: 100%;
+  height: 10%;    
+}
+
+th{
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+td {
+  font-weight: bold;
+  text-align: center;
+  width: calc(100% / 7);;
+}
+
+
+#sun {
+  color: #ff838b;
+}
+#sat {
+  color: #6fb5ff;
+}
+
+
+
+.flex{
+  display: flex;
+  flex-flow: row;
+}
+
+
+#next-prev-button {
+  position: relative;
+}
+
+.day{
+font-display: flex;
+
+}
+
+
+.content{ 
+padding: 0 2% 0 5px;
+width: 100%;
+height: auto;
+}
+
+tr#time{
+border-collapse: collapse;
+border: 1px solid grey;
+display: flex;
+background: #ddd;
+width: 50px;
+height:50px;
+display: grid;
+place-items: center;
+}
+
+/*---------------------------------------------------------------------*/
+
+/*カレンダーの予定表示部*/
+
+td.con_0{ /*日曜日*/
+    border-collapse: collapse;
+    border:  1px solid gray;
+    margin-left: 10%;
+    height: 100%;
+    position: relative;/*親要素に記入*/
+  }
+
+#box0_0{  
+  height: calc(0.8666px * 100);
+  position: absolute;/*自由に配置したい要素に記入*/
+  top: calc(0.8666px * 515); /*開始時間を分で記入*/
+}
+
+.text{  /*文字*/
+
+  color: #704CBC;
+  position: absolute;/*自由に配置したい要素に記入*/
+  top: 50%;
+  font-size: 1vw; /*文字も拡大・縮小*/
+  transform: translate(-50%, -50%);
+
+}
+
+.addition{  
+  width: 100%;
+  margin-left: -1%;
+  background-color: #fff9c4;
+  border: double 2px #ffca28;
+  border-radius: 4px;
+}
+
+.addition_job{
+  width: 100%;
+  margin-left: -1%;
+  background-color: #9ec0f3;
+  border: double 2px #5576e5;
+  border-radius: 4px;
+}
+
+
+td.con_1{ /*月曜日*/
+  border-collapse: collapse;
+  border:  1px solid gray;
+  margin-left: 10%;
+  height: 100%;
+  position: relative;/*親要素に記入*/
+}
+
+#box1_0{  
+  height: calc(0.8666px * 100);
+  position: absolute;/*自由に配置したい要素に記入*/
+  top: calc(0.8666px * 515); /*開始時間を分で記入*/
+}
+
+td.con_2{ /*火曜日*/
+  border-collapse: collapse;
+  border:  1px solid gray;
+  margin-left: 10%;
+  height: 100%;
+  position: relative;/*親要素に記入*/
+}
+
+#box2_0{  
+  height: calc(0.8666px * 100);
+  position: absolute;/*自由に配置したい要素に記入*/
+  top: calc(0.8666px * 515); /*開始時間を分で記入*/
+}
+
+td.con_3{ /*水曜日*/
+  border-collapse: collapse;
+  border:  1px solid gray;
+  margin-left: 10%;
+  height: 100%;
+  position: relative;/*親要素に記入*/
+}
+
+#box3_0{  
+  height: calc(0.8666px * 100);
+  position: absolute;/*自由に配置したい要素に記入*/
+  top: calc(0.8666px * 515); /*開始時間を分で記入*/
+}
+
+td.con_4{ /*木曜日*/
+  border-collapse: collapse;
+  border:  1px solid gray;
+  margin-left: 10%;
+  height: 100%;
+  position: relative;/*親要素に記入*/
+}
+
+#box4_0{  
+  height: calc(0.8666px * 100);
+  position: absolute;/*自由に配置したい要素に記入*/
+  top: calc(0.8666px * 515); /*開始時間を分で記入*/
+}
+
+td.con_5{ /*金曜日*/
+  border-collapse: collapse;
+  border:  1px solid gray;
+  margin-left: 10%;
+  height: 100%;
+  position: relative;/*親要素に記入*/
+}
+
+#box5_0{  
+  height: calc(0.8666px * 100);
+  position: absolute;/*自由に配置したい要素に記入*/
+  top: calc(0.8666px * 515); /*開始時間を分で記入*/
+}
+
+td.con_6{ /*土曜日*/
+  border-collapse: collapse;
+  border:  1px solid gray;
+  margin-left: 10%;
+  height: 100%;
+  position: relative;/*親要素に記入*/
+}
+
+#box6_0{  
+  height: calc(0.8666px * 100);
+  position: absolute;/*自由に配置したい要素に記入*/
+  top: calc(0.8666px * 515); /*開始時間を分で記入*/
+}
+
+/*-------------------------------------------------------*/
+
+#next-prev-button button{
+  cursor: pointer;
+  background: #B78D4A;
+  color: #fff;
+  border: 1px solid #B78D4A;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  margin: 1rem 0;
+}
+#next-prev-button button:hover{
+  background-color: #D4BB92;
+  border-color: #D4BB92;
+}
+#prev {
+  float: left;
+}
+#next {
+  float: right;
+}
+
+/*----------------------------------------------------------*/
+/*メニューボタン*/
+
+
+#btn_menu {	
+position: absolute;
+top: 0.5%;
+right: 0.5%;	
+display: flex;	
+justify-content: center;	
+align-items: center;	
+flex-wrap: wrap;	
+width: 65px;	
+height: 65px;	
+box-sizing: border-box;	
+background-color: #B78D4A;	
+transition: background-color 0.3s ease;
+}
+
+#btn_menu::before {	
+position: absolute;	
+top: 35%;	left: 25%;	
+display: block;	content: "";	
+width: 50%;	height: 2px;	
+background: #f7f7f7;	
+transform: rotate(0deg);	
+transition: transform 0.3s ease, top 0.1s ease;
+}
+
+#btn_menu::after {	
+position: absolute;	
+bottom: 35%;	
+left: 25%;	
+display: block;	
+content: "";	
+width: 50%;	
+height: 2px;	
+background: #f7f7f7;	
+transform: rotate(0deg);	
+transition: transform 0.3s ease, bottom 0.1s ease;
+}
+
+#btn_menu:hover {	
+background-color: rgb(160, 115, 42);
+}
+
+#btn_menu.active::before {	
+top: calc(50% - 1px);	
+transform: rotate(315deg);
+}
+
+#btn_menu3.active::after {	
+bottom: calc(50% - 1px);	
+transform: rotate(-315deg);
+}
+
+
+/*----------------------------------------------------------*/
+/*追加ボタン*/
+
+a.btn{
+font-size: 1.6rem;
+font-weight: 500;
+position: fixed;
+bottom: 20px;
+right: 10px;
+display: inline-block;
+cursor: pointer;
+user-select: none;
+transition: all 0.3s;
+text-align: center;
+vertical-align: middle;
+text-decoration: none;
+letter-spacing: 0.1em;
+}
+
+a:hover {
+transform: scale(1.1);
+}
+
+a.btn--orange {
+color: #fff;
+background-color: #eb6100;
+}
+
+a.btn--orange:hover {
+color: #fff;
+background: #f56500;
+}
+
+a.btn--shadow {
+box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+a.btn--circle {
+border-radius: 50%;
+line-height: 70px;
+width: 70px;
+height: 70px;
+padding: 0;
+}
+
+
+/*----------------------------------------------------------*/
+/*画面遷移*/
+
+.splashbg{
+  display: none;
+}
+/*bodyにappearクラスがついたら出現*/
+body.appear .splashbg{
+  display: block;
+  content: "";
+  position:fixed;
+z-index: 999;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+left: 0;
+  /*transform: scaleX(0);*/
+  background-color:#B78D4A;/*伸びる背景色の設定*/
+animation-name:PageAnime;
+animation-duration:2.2s;
+animation-timing-function:ease-in-out;
+animation-fill-mode:forwards;
+
+}
+
+@keyframes PageAnime{
+0% {
+  transform-origin:right;
+  transform:scaleX(0);
+}
+50% {
+  transform-origin:right;
+  transform:scaleX(1);
+}
+/* 
+50.001% {
+  transform-origin:left;
+}
+100% {
+  transform-origin:left;
+  transform:scaleX(0);
+}  */
+}
+
+.tran{
+  opacity: 0;
+}

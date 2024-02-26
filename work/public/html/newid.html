@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "../css/newid.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>ID作成</title>
+    </head>
+    <body id="all">
+        <div class="center">
+            <h1 class="title">
+                <span>の</span>
+                <span>あ</span>
+                <span>の</span>
+                <span>る</span>
+            </h1>
+            <h3 class="fadeIn">~時間とお金の管理アプリ~</h3>
+            <h2>ID作成</h2>
+        </div>
+            <form action="/newid" method="POST" onsubmit="return submitCheck()" class="center">
+                <p>パスワードは10文字以上で設定してください。</p>
+                <div class="center">
+                    <label for="ID">ID</label>
+                    <input type="text" size="20" name="name" id="ID" class="ID">
+                </div>
+                <div class="center">
+                    <label for="Password">Password</label>
+                    <input type="password" size="20" minlength="10" maxlength="20" pettern="^[a-zA-Z0-9]+$" name="password"id="Password" class="Password">
+                </div>
+                <p><button class="btn save" type="submit" value="保存" ><span>click!</span><span>save</span></button><div>
+                <p><button class="btn return" type="button" value="戻る" onclick="location.href = './login.html' " ><span>click!</span><span>return</span></button><div>
+
+            </form>
+        <script type="text/javascript" src="../js/newid.js"></script>
+    </body>
+</html>

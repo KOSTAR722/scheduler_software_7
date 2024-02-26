@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <link rel="stylesheet" href="../css/calendar.css">
+  <meta charset="UTF-8">
+  <script src="../js/jquery-3.6.4.min.js"></script>
+  <title>Calendar</title>
+</head>
+<body>
+  <div id="splash">
+    <div class="splashbg"></div>
+  <div id="name">あなたは誰ですか</div>
+  <div id="logout"><a href="/login.html">ログイン画面に戻る<a></div>
+  <a id="btn_menu" class="btn_menu" href="./setting.html"></a>
+  
+  <form>
+  <div class="calendar-container">
+    <h1 id="yearmonth"></h1>
+    <input id="tran_1"class="tran"type="text" name="year"></input>
+    <input id="tran_2"class="tran"type="text" name="month"></input>
+    <input id="tran_3"class="tran"type="text" name="date"></input>
+    <div id="next-prev-button">
+        <button id="prev" type="submit" formaction="/calendar_prev" formmethod="get">‹</button>
+        <button id="next" type="submit" formaction="/calendar_next"formmethod="get">›</button>
+    </div>
+  </form>
+    <table class="calendar">
+      <tr>
+        <th id="sun">SUN</th>
+        <th id="mon">MON</th>
+        <th id="tue">TUE</th>
+        <th id="wed">WED</th>
+        <th id="thu">THU</th>
+        <th id="fri">FRI</th>
+        <th id="sat">SAT</th>
+      </tr>
+      <tr class="day">
+        <td id="sun">1</td>
+        <td id="mon">2</td>
+        <td id="tue">3</td>
+        <td id="wed">4</td>
+        <td id="thu">5</td>
+        <td id="fri">6</td>
+        <td id="sat">7</td>
+      </tr>
+    </table>
+
+    <!-- 時間と予定の表示 -->
+    <div class="flex">
+      <table class="flex_time">
+        <tr id="time"><th>0</th></tr>
+        <tr id="time"><th>1</th></tr>
+        <tr id="time"><th>2</th></tr>
+        <tr id="time"><th>3</th></tr>
+        <tr id="time"><th>4</th></tr>
+        <tr id="time"><th>5</th></tr>
+        <tr id="time"><th>6</th></tr>
+        <tr id="time"><th>7</th></tr>
+        <tr id="time"><th>8</th></tr>
+        <tr id="time"><th>9</th></tr>
+        <tr id="time"><th>10</th></tr>
+        <tr id="time"><th>11</th></tr>
+        <tr id="time"><th>12</th></tr>
+        <tr id="time"><th>13</th></tr>
+        <tr id="time"><th>14</th></tr>
+        <tr id="time"><th>15</th></tr>
+        <tr id="time"><th>16</th></tr>
+        <tr id="time"><th>17</th></tr>
+        <tr id="time"><th>18</th></tr>
+        <tr id="time"><th>19</th></tr>
+        <tr id="time"><th>20</th></tr>
+        <tr id="time"><th>21</th></tr>
+        <tr id="time"><th>22</th></tr>
+        <tr id="time"><th>23</th></tr>
+        
+      </table>
+      <table class="content">
+        <td class="con_0">
+          </td>
+        <td class="con_1">
+          
+          </td>
+        <td class="con_2">
+          
+          </td>
+        <td class="con_3"> 
+          
+          </td>
+        <td class="con_4">
+          
+          </td>
+        <td class="con_5">
+          
+          </td>
+        <td class="con_6">
+          
+          </td>
+      
+      </table>
+    </div>
+    <a class="btn btn--orange btn--circle btn--circle-a btn--shadow" href="./addLecture.html" >＋</a>
+  
+  </div>
+</div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/calendar.js"></script>
+</body>
+
+</html>
+
